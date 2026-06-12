@@ -184,9 +184,9 @@ button {
 }
 
 .hero-media img {
-  width: 100%;
+  width: min(100%, 520px);
   height: min(72svh, 720px);
-  object-fit: cover;
+  object-fit: contain;
   object-position: center top;
   filter: saturate(1.08) contrast(1.08) brightness(.9);
 }
@@ -480,9 +480,11 @@ h2 {
 
 .shot img {
   width: 100%;
-  aspect-ratio: 738 / 1220;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
   object-position: top;
+  background: #05060c;
 }
 
 .result-meta {
@@ -545,7 +547,7 @@ h2 {
 
 .proof-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
   margin-top: 22px;
 }
@@ -561,17 +563,17 @@ h2 {
 
 .proof-tile img {
   width: 100%;
-  aspect-ratio: 1 / 1.34;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
   object-position: top;
+  background: #05060c;
   transition: transform .35s ease, filter .35s ease;
 }
 
 .proof-tile span {
-  position: absolute;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
+  display: block;
+  margin: 8px;
   padding: 7px 8px;
   border: 1px solid rgba(255, 255, 255, .12);
   border-radius: 6px;
@@ -672,9 +674,10 @@ h2 {
 
 .signal-art img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
+  background: #05060c;
 }
 
 .signal-tabs {
@@ -839,9 +842,10 @@ h2 {
 
 .about-photo img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
+  background: #05060c;
 }
 
 .about-copy {
